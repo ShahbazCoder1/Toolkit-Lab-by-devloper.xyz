@@ -49,6 +49,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="7cZ1oaGtRgedx7Z6rj8eoGIZ4Jhv4n_XcgJcXbnm9iY" />
+        <meta name="msvalidate.01" content="282402C13B110D7CF76283C53345AF5D" />
         <meta name="apple-mobile-web-app-title" content="Toolkit Lab" />
       </head>
       <body

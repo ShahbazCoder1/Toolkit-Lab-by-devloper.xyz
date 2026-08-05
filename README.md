@@ -169,20 +169,13 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
     'your-tool': YourTool,
 };
 ```
-### Submitting Changes
-1. Fork the repository
-2. Create a feature branch (git checkout -b feature/your-feature)
-3. Commit your changes with clear messages
-4. Push to your branch and open a Pull Request
+## Contributing
 
+We welcome community contributions specifically focused on adding new developer tools. All Pull Requests must target the `dev` branch.
 
-### Code Guidelines
-- Use TypeScript for all new files
-- Keep tools client-side — no server processing
-- Follow the existing component patterns (see src/components/tools/ for reference)
-- Run npm run lint before committing
-
+Please read our [Contributing Guide](CONTRIBUTING.md) for detailed step-by-step instructions on creating tools and submitting changes.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [Apache License 2.0](LICENSE).
+

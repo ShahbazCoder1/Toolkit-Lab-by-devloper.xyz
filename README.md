@@ -6,7 +6,7 @@
   <p>Free, privacy-first developer utilities that run entirely in your browser. No signup, no server processing, no data stored.</p>
 
 
-   ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
   <p>
     <a href="https://toolkit-lab-by-devloper-xyz.vercel.app/" target="_blank">🚀 Visit Toolkit Lab</a>
@@ -144,38 +144,15 @@ Paste a token into **JWT Debugger** to decode and inspect the header, payload, a
 ```
 ## Contributing
 
-Contributions are welcome! Here's how to add a new tool or improve an existing one.
+We welcome community contributions specifically focused on adding new developer tools.
 
-### Adding a New Tool
-
-1. Create a component in `src/components/tools/YourTool.tsx`
-2. Add an entry to the `toolkits` array in `src/data/content.ts`
-3. Register the component in `TOOL_COMPONENTS` in `src/app/tools/[slug]/page.tsx`
-
-```ts
-// src/data/content.ts — add to toolkits[]
-{
-    id: 'your-tool',
-    name: 'Your Tool',
-    description: 'Short description.',
-    longDescription: 'Detailed description.',
-    features: ['Feature 1', 'Feature 2'],
-    Icon: YourIcon,
-    category: 'tools', // documentation | git | seo | design | tools | security
-}
-// src/app/tools/[slug]/page.tsx — add to TOOL_COMPONENTS
-const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
-    // ...existing tools
-    'your-tool': YourTool,
-};
-```
-## Contributing
-
-We welcome community contributions specifically focused on adding new developer tools. All Pull Requests must target the `dev` branch.
-
-Please read our [Contributing Guide](CONTRIBUTING.md) for detailed step-by-step instructions on creating tools and submitting changes.
+- **Target Branch**: All Pull Requests must target the `dev` branch.
+- **Contribution Guide**: Read our [Contributing Guide](CONTRIBUTING.md) for detailed step-by-step instructions on component creation, metadata registration, and dynamic route mapping.
+- **Code of Conduct**: All contributors must follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+- **Automated CI Checks**: All Pull Requests undergo automated GitHub Actions verification for `npm run lint` and `npm run build`.
 
 ## License
 
-This project is licensed under the [Apache License 2.0](LICENSE).
+This project is open source and licensed under the [Apache License 2.0](LICENSE).
+
 
